@@ -107,26 +107,29 @@ nav.quicklinks {
   font-size: 1.25rem;
 }
 .sidebar-container {
-  position: fixed;
-  width: 17.5rem;
-  text-wrap: nowrap;
+  position: relative;
+  min-width: 18rem;
+  max-width: 18rem;
+  margin-right: 3.25rem;
 }
 .main-container {
   width: 100%;
-  margin-left: 20.25rem;
 }
 details summary {
   padding: 0.5rem;
   margin-block: 0.25rem;
-  background-color: red;
+  background-color: var(--background-200);
   border-radius: 0.25em;
 }
 details li {
   padding-block: 0.25rem;
   padding-left: 0.75rem;
   margin-block: 0.25rem;
-  background-color: #6aa4fb;
+  background-color: var(--background-300);
   border-radius: 0.25em;
+}
+details li a {
+  color: var(--text-200);
 }
 article {
   padding-bottom: 2.5rem;
