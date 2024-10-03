@@ -66,6 +66,7 @@ document.addEventListener(
     // }
     function updateCompletionOverview(pct, completed) {
       var pct_fixed = pct.toFixed(2);
+      document.getElementById('completion_overview_percent_nav_min').innerText = pct_fixed + '%';
       document.getElementById('completion_overview_percent_nav').innerText = pct_fixed + '%';
       document.getElementById('completion_overview_percent').innerText = pct_fixed + '%';
       // document.getElementById('completion_progress_bar').style.width = pct_fixed + '%';
