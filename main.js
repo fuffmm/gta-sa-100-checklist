@@ -71,6 +71,7 @@ document.addEventListener(
       document.getElementById('completion_overview_percent').innerText = pct_fixed + '%';
       // document.getElementById('completion_progress_bar').style.width = pct_fixed + '%';
       // document.getElementById('completion_progress_bar').style.width = pct_fixed + '%';
+      document.getElementById('num_completed_nav_min').innerText = completed
       document.getElementById('num_completed_nav').innerText = completed
       document.getElementById('num_completed').innerText = completed
     }
