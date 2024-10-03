@@ -1,31 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 :root[data-theme="light"] {
-  --text-100: #010e1e;
-  --text-200: #032e63;
-  --text-disabled: hsla(213, 94%, 6%, 0.45);
-  --background-100: #ecf5fe;
-  --background-200: #cae3fc;
-  --background-300: #a8d1fa;
-  --primary-100: #043e95;
-  --primary-200: #033072;
-  --primary-300: #02214f;
-  --confirm: #A4D6A6;
-  --deny: #D4989C;
-  --nav-background: hsla(210, 90%, 96%, 0.35);
+  --text-50: #eae9fb;
+  --text-100: #d5d4f7;
+  --text-200: #aba8f0;
+  --text-300: #817de8;
+  --text-400: #5652e0;
+  --text-500: #2c26d9;
+  --text-600: #231fad;
+  --text-700: #1b1782;
+  --text-800: #120f57;
+  --text-900: #09082b;
+  --text-950: #040416;
+
+  --background-50: #eae9fb;
+  --background-100: #d6d3f8;
+  --background-200: #ada8f0;
+  --background-300: #837ce9;
+  --background-400: #5a51e1;
+  --background-500: #3125da;
+  --background-600: #271eae;
+  --background-700: #1d1683;
+  --background-800: #140f57;
+  --background-900: #0a072c;
+  --background-950: #050416;
+
+  --primary-50: #e9e9fb;
+  --primary-100: #d3d3f8;
+  --primary-200: #a8a8f0;
+  --primary-300: #7c7ce9;
+  --primary-400: #5151e1;
+  --primary-500: #2525da;
+  --primary-600: #1e1eae;
+  --primary-700: #161683;
+  --primary-800: #0f0f57;
+  --primary-900: #07072c;
+  --primary-950: #040416;
+
+  --accent-50: #fbe9ef;
+  --accent-100: #f8d3df;
+  --accent-200: #f0a8c0;
+  --accent-300: #e97ca0;
+  --accent-400: #e15181;
+  --accent-500: #da2561;
+  --accent-600: #ae1e4e;
+  --accent-700: #83163a;
+  --accent-800: #570f27;
+  --accent-900: #2c0713;
+  --accent-950: #16040a;
 }
 :root[data-theme="dark"] {
-  --text-100: #e1eefe;
-  --text-200: #bedafd;
-  --text-disabled: hsla(213, 94%, 94%, 0.45);
-  --background-100: #010a13;
-  --background-200: #031e3a;
-  --background-300: #04294d;
-  --primary-100: #6aa4fb;
-  --primary-200: #6aa4fb;
-  --primary-300: #a6c8fd;
-  --confirm: #2F6131;
-  --deny: #5F2327;
-  --nav-background: hsla(210, 90%, 4%, 0.35);
+  --text-50: #040416;
+  --text-100: #09082b;
+  --text-200: #120f57;
+  --text-300: #1b1782;
+  --text-400: #231fad;
+  --text-500: #2c26d9;
+  --text-600: #5652e0;
+  --text-700: #817de8;
+  --text-800: #aba8f0;
+  --text-900: #d5d4f7;
+  --text-950: #eae9fb;
+
+  --background-50: #050316;
+  --background-100: #09072c;
+  --background-200: #130e58;
+  --background-300: #1c1584;
+  --background-400: #251cb0;
+  --background-500: #2f22dd;
+  --background-600: #584fe3;
+  --background-700: #827bea;
+  --background-800: #aca7f1;
+  --background-900: #d5d3f8;
+  --background-950: #eae9fc;
+
+  --primary-50: #040416;
+  --primary-100: #07072c;
+  --primary-200: #0f0f57;
+  --primary-300: #161683;
+  --primary-400: #1e1eae;
+  --primary-500: #2525da;
+  --primary-600: #5151e1;
+  --primary-700: #7c7ce9;
+  --primary-800: #a8a8f0;
+  --primary-900: #d3d3f8;
+  --primary-950: #e9e9fb;
+
+  --accent-50: #16040a;
+  --accent-100: #2c0713;
+  --accent-200: #570f27;
+  --accent-300: #83163a;
+  --accent-400: #ae1e4e;
+  --accent-500: #da2561;
+  --accent-600: #e15181;
+  --accent-700: #e97ca0;
+  --accent-800: #f0a8c0;
+  --accent-900: #f8d3df;
+  --accent-950: #fbe9ef;
+}
+:root {
+  --confirm: #7db078;
+  --deny: #ba6d6d;
 }
 *,
 *::before,
@@ -40,7 +114,7 @@
 body {
   font-family: "DM Sans", sans-serif;
   background-color: var(--background-100);
-  color: var(--text-100);
+  color: var(--text-800);
   transition: background-color 120ms, color 80ms;
 }
 h1 { font-size: 2.75rem; }
@@ -71,7 +145,7 @@ kbd { font-size: 1.35rem; font-family: monospace; }
   nav.page-header {
     padding: 0 2rem 0 2rem !important;
     height: 6rem !important;
-    background-color: var(--background-100) !important;
+    background-color: var(--background-50) !important;
   }
   :root {
     font-size: 14px;
@@ -100,16 +174,22 @@ nav.page-header {
   backdrop-filter: blur(10px);
   z-index: 99;
 }
-.sub-header {
+.check-uncheck-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
+  margin-bottom: 0.75rem;
 }
-.sub-header svg {
+.check-uncheck-buttons svg {
   width: 32px;
   height: 32px;
-  margin-left: 0.5rem;
-  transform: translateY(4px);
+  margin-right: 0.5rem;
+  opacity: 0.65;
+  transition: opacity 120ms;
+}
+.check-uncheck-buttons svg:hover {
+  opacity: 1;
+  filter: drop-shadow(0px 0px 8px var(--background-200));
 }
 nav.quicklinks {
   display: flex;
@@ -139,7 +219,7 @@ details li {
   border-radius: 0.25em;
 }
 details li a {
-  color: var(--text-200);
+  color: var(--text-700);
 }
 article {
   padding-bottom: 2.5rem;
@@ -147,7 +227,7 @@ article {
   flex-direction: column;
 }
 article header {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
 }
 header kbd {
   font-size: 1.85rem;
@@ -157,14 +237,13 @@ header kbd {
   font-size: 2.75rem;
   font-weight: 500;
   padding-top: 2.75rem;
-  padding-bottom: 0.75rem;
 }
 label.no-percent {
   font-style: italic;
-  color: var(--text-disabled);
+  color: var(--background-600);
 }
 ins {
-  color: var(--primary-100);
+  color: var(--accent-600);
   font-family: monospace;
 }
 p ins {
@@ -175,20 +254,6 @@ p ins {
   cursor: pointer;
 }
 .check-uncheck-buttons svg:last-child {
-  fill: var(--confirm);
-  cursor: pointer;
-}
-span#subAlt svg {
-  width: 32px;
-  height: 32px;
-  margin-left: 0.5rem;
-  transform: translateY(4px);
-}
-span#subAlt svg:first-child {
-  fill: var(--deny);
-  cursor: pointer;
-}
-span#subAlt svg:last-child {
   fill: var(--confirm);
   cursor: pointer;
 }
@@ -204,7 +269,7 @@ span#subAlt svg:last-child {
   gap: 0.25em;
   padding-inline: 0.5rem;
     label {
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       font-family: monospace;
     }
 }
@@ -232,7 +297,7 @@ input[type="checkbox"] {
   color: currentColor;
   width: 1em;
   height: 1em;
-  border: 0.15em solid var(--primary-100);
+  border: 0.15em solid var(--accent-600);
   border-radius: 0.2em;
   transform: translateY(0.125em);
   display: grid;
@@ -241,13 +306,13 @@ input[type="checkbox"] {
 }
 input[type="checkbox"]::before {
   content: "";
-  width: 0.85em;
-  height: 0.85em;
-  border-radius: 0.15em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.125em;
   transform: scale(0);
   transition: 80ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--primary-100);
-  background-color: var(--primary-100);
+  box-shadow: inset 1em 1em var(--accent-600);
+  background-color: var(--background-100);
 }
 input[type="checkbox"]:checked::before {
   transform: scale(1);
@@ -284,7 +349,8 @@ hr {
   align-items: center;
   justify-content: center;
   padding: 4rem 8rem 2rem 8rem;
-  color: var(--text-disabled);
+  background-color: var(--background-100);
+  color: var(--text-700);
   font-size: 0.5rem;
 }
 .page-footer svg {
@@ -298,12 +364,18 @@ hr {
   height: 2.25rem;
   width: 2.25rem;
   border-radius: 50%;
-  background-color: var(--text-100);
+  background-color: var(--background-400);
+  opacity: 0.65;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   cursor: pointer;
+}
+#themeToggle:hover {
+  transition: opacity 120ms, filter 120ms;
+  opacity: 1;
+  filter: drop-shadow(0 0 8px var(--background-200));
 }
 #themeToggle svg {
   fill: var(--background-100);
