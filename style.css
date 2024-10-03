@@ -145,7 +145,7 @@ kbd { font-size: 1.35rem; font-family: monospace; }
   nav.page-header {
     padding: 0 2rem 0 2rem !important;
     height: 6rem !important;
-    background-color: var(--background-50) !important;
+    background-color: var(--background-100) !important;
   }
   :root {
     font-size: 14px;
@@ -170,7 +170,8 @@ nav.page-header {
   margin: 0 0 0 0;
   padding: 0 8rem 0 8rem;
   top: 0;
-  background-color: var(--nav-background);
+  border-bottom: 1px solid var(--background-400);
+  background-color: transparent;
   backdrop-filter: blur(10px);
   z-index: 99;
 }
@@ -219,7 +220,7 @@ details li {
   border-radius: 0.25em;
 }
 details li a {
-  color: var(--text-700);
+  color: var(--accent-800);
 }
 article {
   padding-bottom: 2.5rem;
@@ -237,10 +238,11 @@ header kbd {
   font-size: 2.75rem;
   font-weight: 500;
   padding-top: 2.75rem;
+  color: var(--text-600);
 }
 label.no-percent {
   font-style: italic;
-  color: var(--background-600);
+  color: var(--primary-700);
 }
 ins {
   color: var(--accent-600);
