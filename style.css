@@ -259,7 +259,11 @@ p ins {
   fill: var(--confirm);
   cursor: pointer;
 }
-
+svg.help-icon {
+  fill: var(--primary-700);
+  margin-left: 0.75rem;
+  cursor: help;
+}
 
 
 
@@ -326,7 +330,6 @@ hr {
   text-align: center;
   height: 0;
 }
-
 .list-styling label,
 .list-styling-collectable {
   padding-inline: 1.25rem;
@@ -340,7 +343,6 @@ hr {
 .list-styling label:nth-of-type(even) {
   background-color: var(--background-300);
 }
-
 
 
 

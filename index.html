@@ -12,6 +12,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="main.js"></script>
+    <script src="modal.js"></script>
     <script defer src="darkmode.js"></script>
     <title>GTA: San Andreas 100% Checklist</title>
   </head>
@@ -156,7 +157,6 @@
       <div class="main-container">
       <h1>GTA: San Andreas 100% Checklist</h1>
       <h6>Your Completion: <ins id="num_completed">0</ins>&nbsp;/&nbsp;<ins>187</ins> of Required Objectives. [&nbsp;&nbsp;<ins id="completion_overview_percent"></ins>&nbsp;&nbsp;]</h6>
-      
       <p class="section-header">Story Missions</p>
       <article class="list-styling check-all-group">
         <header class="sub-header" id="los-santos-story"> >> Los Santos Story Missions</header>
@@ -347,7 +347,7 @@
         </label>
         <label class="gives-percent" for="story_555wetip">
           <input class="form-check-input" id="story_555wetip" type="checkbox" value="" />
-          <span class="radar-icon"><img src="images/radar-cjicon.webp" alt="Error loading image..." class="icon"></span><kbd>555</kbd>&nbsp;We Tip
+          <span class="radar-icon"><img src="images/radar-cjicon.webp" alt="Error loading image..." class="icon"></span>555 We Tip
         </label>
         <label class="gives-percent" for="story_deconstruction">
           <input class="form-check-input" id="story_deconstruction" type="checkbox" value="" />
@@ -419,7 +419,7 @@
         </label>
         <label class="gives-percent" for="story_pier69">
           <input class="form-check-input" id="story_pier69" type="checkbox" value="" />
-          <span class="radar-icon"><img src="images/radar-triadsicon.webp" alt="Error loading image..." class="icon"></span>Pier&nbsp;<kbd>69</kbd>
+          <span class="radar-icon"><img src="images/radar-triadsicon.webp" alt="Error loading image..." class="icon"></span>Pier 69
         </label>
         <label class="gives-percent" for="story_torenoslastflight">
           <input class="form-check-input" id="story_torenoslastflight" type="checkbox" value="" />
@@ -429,8 +429,8 @@
           <input class="form-check-input" id="story_yaykaboomboom" type="checkbox" value="" />
           <span class="radar-icon"><img src="images/radar-triadsicon.webp" alt="Error loading image..." class="icon"></span>Yay Ka-Boom-Boom
         </label>
-        <label class="gives-percent" for="">
-          <input class="form-check-input" id="" type="checkbox" value="" />
+        <label class="no-percent" for="story_drivingschool">
+          <input class="form-check-input" id="story_drivingschool" type="checkbox" value="" />
           <span class="radar-icon"><img src="images/radar-schoolicon.webp" alt="Error loading image..." class="icon"></span>Back to School
         </label>
         <label class="gives-percent" for="story_zeroingin">
@@ -591,7 +591,7 @@
         </label>
         <label class="gives-percent" for="story_grove4life">
           <input class="form-check-input" id="story_grove4life" type="checkbox" value="" />
-          <span class="radar-icon"><img src="images/radar-sweeticon.webp" alt="Error loading image..." class="icon"></span>Grove&nbsp;<kbd>4</kbd>&nbsp;Life
+          <span class="radar-icon"><img src="images/radar-sweeticon.webp" alt="Error loading image..." class="icon"></span>Grove 4 Life
         </label>
         <label class="gives-percent" for="story_riot">
           <input class="form-check-input" id="story_riot" type="checkbox" value="" />
@@ -1660,28 +1660,28 @@
       <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
       <article class="list-styling">
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete&nbsp;<kbd>50</kbd>&nbsp;Taxi Driver Fares (In Total)
+          <input class="form-check-input" id="all_taxi" type="checkbox" value="" />
+          Complete 50 Taxi Driver Fares (In Total)
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Vigilante Level&nbsp;<kbd>12</kbd>
+          <input class="form-check-input" id="all_vigilante" type="checkbox" value="" />
+          Complete Vigilante Level 12
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Paramedic Level&nbsp;<kbd>12</kbd>
+          <input class="form-check-input" id="all_paramedic" type="checkbox" value="" />
+          Complete Paramedic Level 12
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Firefighter Level&nbsp;<kbd>12</kbd>
+          <input class="form-check-input" id="all_firefighter" type="checkbox" value="" />
+          Complete Firefighter Level 12
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Pimping Level&nbsp;<kbd>10</kbd>
+          <input class="form-check-input" id="all_pimping" type="checkbox" value="" />
+          Complete Pimping Level 10
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Freight Mission (<kbd>2</kbd>&nbsp;Levels)
+          <input class="form-check-input" id="all_freight" type="checkbox" value="" />
+          Complete Freight Mission (2 Levels)
         </label>
       </article>
     </div>
@@ -1691,34 +1691,34 @@
       <article class="list-styling">
         <header> >> Los Santos Hidden Challenges</header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="win_bmx"" type="checkbox" value="" />
           Win BMX Challenge
         </label>
       </article>
       <article class="list-styling">
         <header> >> Countryside Hidden Challenges</header>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="win_chiliad_01" type="checkbox" value="" />
           Win 'Scotch Bonnet' Chiliad Challenge Route
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="win_chiliad_02" type="checkbox" value="" />
           Win 'Birdseye Winder' Chiliad Challenge Route
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="win_chiliad_03" type="checkbox" value="" />
           Win 'Cobra Run' Chiliad Challenge Route
         </label>
         <hr>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
-          Win All&nbsp;<kbd>3</kbd>&nbsp;Chiliad Challenges
+          <input class="form-check-input" id="win_all_chiliad" type="checkbox" value="" />
+          Win All 3 Chiliad Challenges
         </label>
       </article>
       <article class="list-styling">
         <header> >> San Fierro Hidden Challenges</header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="win_nrg500" type="checkbox" value="" />
           Win NRG-500 Challenge
         </label>
       </article>
@@ -1729,26 +1729,26 @@
       <article class="list-styling">
         <header> >> Los Santos Stadium Challenges</header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
-          Win 8-Track (<kbd>1</kbd>st Place)
+          <input class="form-check-input" id="win_8track" type="checkbox" value="" />
+          Win 8-Track (1st Place)
         </label>
       </article>
       <article class="list-styling">
         <header> >> San Fierro Stadium Challenges</header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
-          Win Blood Bowl (Score&nbsp;<kbd>60+</kbd>&nbsp;Seconds)
+          <input class="form-check-input" id="win_bloodbowl" type="checkbox" value="" />
+          Win Blood Bowl (Score 60+ Seconds)
         </label>
       </article>
       <article class="list-styling">
         <header> >> Las Venturas Stadium Challenges</header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="win_dirttrack" type="checkbox" value="" />
           Win Dirt Track (1st Place)
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
-          Win Kick Start (Score&nbsp;<kbd>26</kbd>&nbsp;Points)
+          <input class="form-check-input" id="win_kickstart" type="checkbox" value="" />
+          Win Kick Start (Score 26 Points)
         </label>
       </article>
     </div>
@@ -1758,21 +1758,21 @@
       <article class="list-styling">
         <header> >> Los Santos Gym Moves</header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="win_ls_gym" type="checkbox" value="" />
           Win Los Santos Gym Moves
         </label>
       </article>
       <article class="list-styling">
         <header> >> San Fierro Gym Moves</header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="win_sf_gym" type="checkbox" value="" />
           Win San Fierro Gym Moves
         </label>
       </article>
       <article class="list-styling">
         <header> >> Las Venturas Gym Moves</header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="win_lv_gym" type="checkbox" value="" />
           Win Las Venturas Gym Moves
         </label>
       </article>
@@ -1782,19 +1782,19 @@
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
       <article class="list-styling">
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="win_pistol" type="checkbox" value="" />
           Win Pistol Challenge
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="win_msmg" type="checkbox" value="" />
           Win Micro SMG Challenge
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="win_shotgun" type="checkbox" value="" />
           Win Shotgun Challenge
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="win_ak" type="checkbox" value="" />
           Win AK-47 Challenge
         </label>
       </article>
@@ -1804,56 +1804,56 @@
         <header class="sub-header"> >> San Fierro Driving School
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="driving_school_01" type="checkbox" value="" />
           Pass 'The 360' Driving School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="driving_school_02" type="checkbox" value="" />
           Pass 'The 180' Driving School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="driving_school_03" type="checkbox" value="" />
           Pass 'Whip & Terminate' Driving School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="driving_school_04" type="checkbox" value="" />
           Pass 'Pop & Control' Driving School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="driving_school_05" type="checkbox" value="" />
           Pass 'Burn & Lap' Driving School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="driving_school_06" type="checkbox" value="" />
           Pass 'Cone Coil' Driving School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="driving_school_07" type="checkbox" value="" />
           Pass 'The 90' Driving School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="driving_school_08" type="checkbox" value="" />
           Pass 'Wheelie Weave' Driving School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="driving_school_09" type="checkbox" value="" />
           Pass 'Spin & Go' Driving School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="driving_school_10" type="checkbox" value="" />
           Pass 'P.I.T.' Driving School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="driving_school_11" type="checkbox" value="" />
           Pass 'Alley Oop' Driving School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="driving_school_12" type="checkbox" value="" />
           Pass 'City Slicking' Driving School Test
         </label>
         <hr>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="all_driving_school" type="checkbox" value="" />
           Pass All Driving School Tests (Bronze Or Higher)
         </label>
       </article>
@@ -1861,28 +1861,28 @@
         <header class="sub-header"> >> Desert Boat School
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="boat_school_01" type="checkbox" value="" />
           Pass 'Basic Seamanship' Boat School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="boat_school_02" type="checkbox" value="" />
           Pass 'Plot A Course' Boat School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="boat_school_03" type="checkbox" value="" />
           Pass 'Fresh Slalom' Boat School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="boat_school_04" type="checkbox" value="" />
           Pass 'Flying Fish' Boat School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="boat_school_05" type="checkbox" value="" />
           Pass 'Land, Sea & Air' Boat School Test
         </label>
         <hr>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="all_boat_school" type="checkbox" value="" />
           Pass All Boat School Tests (Bronze Or Higher)
         </label>
       </article>
@@ -1890,48 +1890,48 @@
         <header class="sub-header"> >> Desert Flight School
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="flight_school_01" type="checkbox" value="" />
           Pass 'Takeoff' Flight School Test
           </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="flight_school_02" type="checkbox" value="" />
           Pass 'Land Plane' Flight School Test
           </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="flight_school_03" type="checkbox" value="" />
           Pass 'Circle Airstrip' Flight School Test
           </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="flight_school_04" type="checkbox" value="" />
           Pass 'Circle Airstrip & Land' Flight School Test
           </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="flight_school_05" type="checkbox" value="" />
           Pass 'Helicopter Takeoff' Flight School Test
           </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="flight_school_06" type="checkbox" value="" />
           Pass 'Land Helicopter' Flight School Test
           </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="flight_school_07" type="checkbox" value="" />
           Pass 'Destroy Targets' Flight School Test
           </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="flight_school_08" type="checkbox" value="" />
           Pass 'Loop-The-Loop' Flight School Test
           </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="flight_school_09" type="checkbox" value="" />
           Pass 'Barrel Roll' Flight School Test
           </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="flight_school_10" type="checkbox" value="" />
           Pass 'Parachute Onto Target' Flight School Test
           </label>
           <hr>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="all_flight_school" type="checkbox" value="" />
           Pass All Flying School Tests (Broonze Or Higher)
           </label>
       </article>
@@ -1939,32 +1939,32 @@
         <header class="sub-header"> >> Las Venturas Bike School
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="bike_school_01" type="checkbox" value="" />
           Pass 'The 360' Bike School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="bike_school_02" type="checkbox" value="" />
           Pass 'The 180' Bike School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="bike_school_03" type="checkbox" value="" />
           Pass 'The Wheelie' Bike School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="bike_school_04" type="checkbox" value="" />
           Pass 'Jump & Stop' Bike School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="bike_school_05" type="checkbox" value="" />
           Pass 'The Stoppie' Bike School Test
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="bike_school_06" type="checkbox" value="" />
           Pass 'Jump & Stoppie' Bike School Test
         </label>
         <hr>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="all_bike_school" type="checkbox" value="" />
           Pass All Bike School Tests (Bronze Or Higher)
         </label>
       </article>
@@ -1973,22 +1973,22 @@
       <article class="list-styling">
         <header> >> Los Santos Courier Missions</header>
          <label class="gives-percent">
-          <input type="checkbox" />
-          Complete Roboi's Food Mart Courier Level&nbsp;<kbd>4</kbd>
+          <input class="form-check-input" id="courier_ls" type="checkbox" value="" />
+          Complete Roboi's Food Mart Courier Level 4
         </label>
       </article>
       <article class="list-styling">
         <header> >> San Fierro Courier Missions</header>
          <label class="gives-percent">
-          <input type="checkbox" />
-          Complete Hippy Shopper Courier Level&nbsp;<kbd>4</kbd>
+          <input class="form-check-input" id="courier_sf" type="checkbox" value="" />
+          Complete Hippy Shopper Courier Level 4
         </label>
       </article>
       <article class="list-styling">
         <header> >> Las Venturas Courier Missions</header>
          <label class="gives-percent">
-          <input type="checkbox" />
-          Complete Burger Shot Courier Level&nbsp;<kbd>4</kbd>
+          <input class="form-check-input" id="courier_lv" type="checkbox" value="" />
+          Complete Burger Shot Courier Level 4
         </label>
       </article>
       <p class="section-header">Asset Missions</p>
@@ -1996,85 +1996,85 @@
         <header class="sub-header"> >> Countryside Trucking Missions
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Trucking Mission&nbsp;<kbd>1</kbd>
+          <input class="form-check-input" id="trucking_01" type="checkbox" value="" />
+          Complete Trucking Mission 1
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Trucking Mission&nbsp;<kbd>2</kbd>
+          <input class="form-check-input" id="trucking_02" type="checkbox" value="" />
+          Complete Trucking Mission 2
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Trucking Mission&nbsp;<kbd>3</kbd>
+          <input class="form-check-input" id="trucking_03" type="checkbox" value="" />
+          Complete Trucking Mission 3
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Trucking Mission&nbsp;<kbd>4</kbd>
+          <input class="form-check-input" id="trucking_04" type="checkbox" value="" />
+          Complete Trucking Mission 4
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Trucking Mission&nbsp;<kbd>5</kbd>
+          <input class="form-check-input" id="trucking_05" type="checkbox" value="" />
+          Complete Trucking Mission 5
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Trucking Mission&nbsp;<kbd>6</kbd>
+          <input class="form-check-input" id="trucking_06" type="checkbox" value="" />
+          Complete Trucking Mission 6
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Trucking Mission&nbsp;<kbd>7</kbd>
+          <input class="form-check-input" id="trucking_07" type="checkbox" value="" />
+          Complete Trucking Mission 7
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Trucking Mission&nbsp;<kbd>8</kbd>
+          <input class="form-check-input" id="trucking_08" type="checkbox" value="" />
+          Complete Trucking Mission 8
         </label>
         <hr>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete All&nbsp;<kbd>8</kbd>&nbsp;Trucking Missions
+          <input class="form-check-input" id="all_trucking" type="checkbox" value="" />
+          Complete All 8 Trucking Missions
         </label>
       </article>
       <article class="list-styling">
         <header> >> San Fierro Valet Parking Missions</header>
          <label class="gives-percent">
-          <input type="checkbox" />
-          Complete Valet Parking Level&nbsp;<kbd>5</kbd>
+          <input class="form-check-input" id="all_valet" type="checkbox" value="" />
+          Complete Valet Parking Level 5
         </label>
       </article>
       <article class="list-styling check-all-group">
         <header class="sub-header"> >> Las Venturas Quarry Missions
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Quarry Mission&nbsp;<kbd>1</kbd>
+          <input class="form-check-input" id="quarry_01" type="checkbox" value="" />
+          Complete Quarry Mission 1
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Quarry Mission&nbsp;<kbd>2</kbd>
+          <input class="form-check-input" id="quarry_02" type="checkbox" value="" />
+          Complete Quarry Mission 2
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Quarry Mission&nbsp;<kbd>3</kbd>
+          <input class="form-check-input" id="quarry_03" type="checkbox" value="" />
+          Complete Quarry Mission 3
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Quarry Mission&nbsp;<kbd>4</kbd>
+          <input class="form-check-input" id="quarry_04" type="checkbox" value="" />
+          Complete Quarry Mission 4
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Quarry Mission&nbsp;<kbd>5</kbd>
+          <input class="form-check-input" id="quarry_05" type="checkbox" value="" />
+          Complete Quarry Mission 5
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Quarry Mission&nbsp;<kbd>6</kbd>
+          <input class="form-check-input" id="quarry_06" type="checkbox" value="" />
+          Complete Quarry Mission 6
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete Quarry Mission&nbsp;<kbd>7</kbd>
+          <input class="form-check-input" id="quarry_07" type="checkbox" value="" />
+          Complete Quarry Mission 7
         </label>
         <hr>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
-          Complete All&nbsp;<kbd>7</kbd>&nbsp;Quarry Missions
+          <input class="form-check-input" id="all_quarry" type="checkbox" value="" />
+          Complete All 7 Quarry Missions
         </label>
       </article>
       <p class="section-header">Win Street Races</p>
@@ -2082,39 +2082,39 @@
         <header class="sub-header"> >> Los Santos Street Races
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_race_01" type="checkbox" value="" />
           Win Lowrider Race
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_race_02" type="checkbox" value="" />
           Win Little Loop
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_race_03" type="checkbox" value="" />
           Win Backboard Wanderer
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_race_04" type="checkbox" value="" />
           Win City Circuit
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_race_05" type="checkbox" value="" />
           Win Vinewood
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_race_06" type="checkbox" value="" />
           Win Freeway
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_race_07" type="checkbox" value="" />
           Win Into The Country
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_race_08" type="checkbox" value="" />
           Win Badlands A
         </label>
         <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_race_09" type="checkbox" value="" />
           Win Badlands B
         </label>
       </article>
@@ -2122,27 +2122,27 @@
         <header class="sub-header"> >> San Fierro Street Races
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="sf_race_01" type="checkbox" value="" />
           Win Dirtbike Danger
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="sf_race_02" type="checkbox" value="" />
           Win Bandito Country
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="sf_race_03" type="checkbox" value="" />
           Win Go-Go Karting
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="sf_race_04" type="checkbox" value="" />
           Win San Fierro Fastlane
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="sf_race_05" type="checkbox" value="" />
           Win San Fierro Hills
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="sf_race_06" type="checkbox" value="" />
           Win Country Endurance
         </label>
       </article>
@@ -2150,19 +2150,19 @@
         <header class="sub-header"> >> Las Venturas LVA Freight Depot Street Races
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_lva_race_01" type="checkbox" value="" />
           SF To LV
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_lva_race_02" type="checkbox" value="" />
           Dam Rider
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_lva_race_03" type="checkbox" value="" />
           Desert Tricks
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_lva_race_04" type="checkbox" value="" />
           LV Ringroad
         </label>
       </article>
@@ -2170,27 +2170,27 @@
         <header class="sub-header"> >> Las Venturas Airport Checkpoint Challenges
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_airport_race_01" type="checkbox" value="" />
           World War Ace
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_airport_race_02" type="checkbox" value="" />
           Barnstorming
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_airport_race_03" type="checkbox" value="" />
           Military Service
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_airport_race_04" type="checkbox" value="" />
           Chopper Checkpoint
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_airport_race_05" type="checkbox" value="" />
           Whirly-Bird Waypoint
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_airport_race_06" type="checkbox" value="" />
           Heli Hell
         </label>
       </article>
@@ -2199,48 +2199,48 @@
         <header class="sub-header"> >> Complete List 1
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_1_01" type="checkbox" value="" />
           Patriot
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_1_02" type="checkbox" value="" />
           Sanchez
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_1_03" type="checkbox" value="" />
           Stretch
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_1_04" type="checkbox" value="" />
           Feltzer
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_1_05" type="checkbox" value="" />
           Remington
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_1_06" type="checkbox" value="" />
           Buffalo
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_1_07" type="checkbox" value="" />
           Sentinel
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_1_08" type="checkbox" value="" />
           Infernus
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_1_09" type="checkbox" value="" />
           Camper
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_1_10" type="checkbox" value="" />
           Admiral
         </label>
         <hr>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="all_imex_1" type="checkbox" value="" />
           Complete Import / Export List 1
         </label>
       </article>
@@ -2248,48 +2248,48 @@
         <header class="sub-header"> >> Complete List 2
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_2_01" type="checkbox" value="" />
           Slamvan
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_2_02" type="checkbox" value="" />
           Blista Compact
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_2_03" type="checkbox" value="" />
           Stafford
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_2_04" type="checkbox" value="" />
           Sabre
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_2_05" type="checkbox" value="" />
           FCR-900
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_2_06" type="checkbox" value="" />
           Cheetah
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_2_07" type="checkbox" value="" />
           Rancher
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_2_08" type="checkbox" value="" />
           Stallion
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_2_09" type="checkbox" value="" />
           Tanker
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_2_10" type="checkbox" value="" />
           Comet
         </label>
         <hr>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="all_imex_2" type="checkbox" value="" />
           Complete Import / Export List 2
         </label>
       </article>
@@ -2297,48 +2297,48 @@
         <header class="sub-header"> >> Complete List 3
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_3_01" type="checkbox" value="" />
           Blade
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_3_02" type="checkbox" value="" />
           Freeway
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_3_03" type="checkbox" value="" />
           Mesa
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_3_04" type="checkbox" value="" />
           ZR-350
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_3_05" type="checkbox" value="" />
           Euros
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_3_06" type="checkbox" value="" />
           Banshee
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_3_07" type="checkbox" value="" />
           Super GT
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_3_08" type="checkbox" value="" />
           Journey
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_3_09" type="checkbox" value="" />
           Huntley
         </label>
          <label class="no-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="imex_3_10" type="checkbox" value="" />
           BF Injection
         </label>
         <hr>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="all_imex_3" type="checkbox" value="" />
           Complete Import / Export List 3
         </label>
       </article>
@@ -2347,27 +2347,27 @@
         <header class="sub-header"> >> Purchase 6 Los Santos Safe Houses
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_safehouse_01" type="checkbox" value="" />
           Willowfield - <ins>$10,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_safehouse_02" type="checkbox" value="" />
           Verdant Bluffs - <ins>$10,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_safehouse_03" type="checkbox" value="" />
           Jefferson - <ins>$10,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_safehouse_04" type="checkbox" value="" />
           Mulholland - <ins>$120,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_safehouse_05" type="checkbox" value="" />
           Verona Beach - <ins>$10,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="ls_safehouse_06" type="checkbox" value="" />
           Santa Maria Beach - <ins>$30,000</ins>
         </label>
       </article>
@@ -2375,23 +2375,23 @@
         <header class="sub-header"> >> Purchase 5 Countryside Safe Houses
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="country_safehouse_01" type="checkbox" value="" />
           Palomino Creek - <ins>$35,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="country_safehouse_02" type="checkbox" value="" />
           Blueberry - <ins>$10,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="country_safehouse_03" type="checkbox" value="" />
           Dillimore - <ins>$40,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="country_safehouse_04" type="checkbox" value="" />
           Angel Pine - <ins>$20,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="country_safehouse_05" type="checkbox" value="" />
           Whetstone - <ins>$100,000</ins>
         </label>
       </article>
@@ -2399,27 +2399,27 @@
         <header class="sub-header"> >> Purchase 6 San Fierro Safe Houses
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="sf_safehouse_01" type="checkbox" value="" />
           Hashbury - <ins>$40,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="sf_safehouse_02" type="checkbox" value="" />
           Doherty - <ins>$20,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="sf_safehouse_03" type="checkbox" value="" />
           Queens - <ins>$50,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="sf_safehouse_04" type="checkbox" value="" />
           Chinatown - <ins>$20,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="sf_safehouse_05" type="checkbox" value="" />
           Paradiso - <ins>$20,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="sf_safehouse_06" type="checkbox" value="" />
           Calton Heights - <ins>$100,000</ins>
         </label>
       </article>
@@ -2427,54 +2427,54 @@
         <header class="sub-header"> >> Purchase 3 Desert Safe Houses
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="desert_safehouse_01" type="checkbox" value="" />
           El Quebradas - <ins>$20,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="desert_safehouse_02" type="checkbox" value="" />
           Tierra Robada - <ins>$20,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="desert_safehouse_03" type="checkbox" value="" />
           Fort Carson - <ins>$30,000</ins>
         </label>
       </article>
       <article class="list-styling check-all-group">
         <header class="sub-header"> >> Purchase 9 Las Venturas Safe Houses<div class="check-uncheck-buttons"><svg class="uncheck-all" id="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_safehouse_01" type="checkbox" value="" />
           Whitewood Estates - <ins>$30,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_safehouse_02" type="checkbox" value="" />
           Prockle Pine - <ins>$50,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_safehouse_03" type="checkbox" value="" />
           Redsands West - <ins>$30,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_safehouse_04" type="checkbox" value="" />
           Pirates In Men's Pants - <ins>$6,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_safehouse_05" type="checkbox" value="" />
           The Camel's Toe - <ins>$6,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_safehouse_06" type="checkbox" value="" />
           Rockshore West - <ins>$20,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_safehouse_07" type="checkbox" value="" />
           The Clown's Pocket - <ins>$6,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_safehouse_08" type="checkbox" value="" />
           Old Venturas Strip - <ins>$6,000</ins>
         </label>
          <label class="gives-percent">
-          <input class="form-check-input" type="checkbox" />
+          <input class="form-check-input" id="lv_safehouse_09" type="checkbox" value="" />
           Creek - <ins>$10,000</ins>
         </label>
       </article>
@@ -2482,18 +2482,18 @@
       <article class="list-styling">
         <header> >> Purchase 2 San Fierro Businesses</header>
          <label class="gives-percent">
-          <input type="checkbox" />
+          <input class="form-check-input" id="sf_business_01" type="checkbox" value="" />
           Zero's RC Shop - <ins>$30,000</ins>
         </label>
          <label class="gives-percent">
-          <input type="checkbox" />
+          <input class="form-check-input" id="sf_business_02" type="checkbox" value="" />
           Wang Cars - <ins>$50,000</ins>
         </label>
       </article>
       <article class="list-styling">
         <header> >> Purchase 1 Desert Business</header>
          <label class="gives-percent">
-          <input type="checkbox" />
+          <input class="form-check-input" id="desert_business_01" type="checkbox" value="" />
           Verdant Meadows Airfield - <ins>$80,000</ins>
         </label>
       </article>
