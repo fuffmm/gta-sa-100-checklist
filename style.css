@@ -1,105 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 :root[data-theme="light"] {
-  --text-50: #eae9fb;
-  --text-100: #d5d4f7;
-  --text-200: #aba8f0;
-  --text-300: #817de8;
-  --text-400: #5652e0;
-  --text-500: #2c26d9;
-  --text-600: #231fad;
-  --text-700: #1b1782;
-  --text-800: #120f57;
-  --text-900: #09082b;
-  --text-950: #040416;
-
-  --background-50: #eae9fb;
-  --background-100: #d6d3f8;
-  --background-200: #ada8f0;
-  --background-300: #837ce9;
-  --background-400: #5a51e1;
-  --background-500: #3125da;
-  --background-600: #271eae;
-  --background-700: #1d1683;
-  --background-800: #140f57;
-  --background-900: #0a072c;
-  --background-950: #050416;
-
-  --primary-50: #e9e9fb;
-  --primary-100: #d3d3f8;
-  --primary-200: #a8a8f0;
-  --primary-300: #7c7ce9;
-  --primary-400: #5151e1;
-  --primary-500: #2525da;
-  --primary-600: #1e1eae;
-  --primary-700: #161683;
-  --primary-800: #0f0f57;
-  --primary-900: #07072c;
-  --primary-950: #040416;
-
-  --accent-50: #fbe9ef;
-  --accent-100: #f8d3df;
-  --accent-200: #f0a8c0;
-  --accent-300: #e97ca0;
-  --accent-400: #e15181;
-  --accent-500: #da2561;
-  --accent-600: #ae1e4e;
-  --accent-700: #83163a;
-  --accent-800: #570f27;
-  --accent-900: #2c0713;
-  --accent-950: #16040a;
+  --background-100: #fbf8fb;
+  --background-200: #fbf9fe;
+  --primary-100: #f2e8f2;
+  --primary-200: #e8d8e8;
+  --accent-100: #f0e5f0;
+  --accent-200: #ecdfec;
+  --accent-300: #9994d9;
+  --text-100: #a563a5;
+  --text-200: #b077b0;
+  --text-300: #69638e;
+  --cta-100: #eb85eb;
 }
 :root[data-theme="dark"] {
-  --text-50: #040416;
-  --text-100: #09082b;
-  --text-200: #120f57;
-  --text-300: #1b1782;
-  --text-400: #231fad;
-  --text-500: #2c26d9;
-  --text-600: #5652e0;
-  --text-700: #817de8;
-  --text-800: #aba8f0;
-  --text-900: #d5d4f7;
-  --text-950: #eae9fb;
-
-  --background-50: #050316;
-  --background-100: #09072c;
-  --background-200: #130e58;
-  --background-300: #1c1584;
-  --background-400: #251cb0;
-  --background-500: #2f22dd;
-  --background-600: #584fe3;
-  --background-700: #827bea;
-  --background-800: #aca7f1;
-  --background-900: #d5d3f8;
-  --background-950: #eae9fc;
-
-  --primary-50: #040416;
-  --primary-100: #07072c;
-  --primary-200: #0f0f57;
-  --primary-300: #161683;
-  --primary-400: #1e1eae;
-  --primary-500: #2525da;
-  --primary-600: #5151e1;
-  --primary-700: #7c7ce9;
-  --primary-800: #a8a8f0;
-  --primary-900: #d3d3f8;
-  --primary-950: #e9e9fb;
-
-  --accent-50: #16040a;
-  --accent-100: #2c0713;
-  --accent-200: #570f27;
-  --accent-300: #83163a;
-  --accent-400: #ae1e4e;
-  --accent-500: #da2561;
-  --accent-600: #e15181;
-  --accent-700: #e97ca0;
-  --accent-800: #f0a8c0;
-  --accent-900: #f8d3df;
-  --accent-950: #fbe9ef;
+  --background-100: #04010a;
+  --background-200: #351573;
+  --primary-100: #151235;
+  --primary-200: #241e5b;
+  --accent-100: #272260;
+  --accent-200: #362f86;
+  --accent-300: #a9a4e5;
+  --text-100: #c1b6ff;
+  --text-200: #9a91cc;
+  --text-300: #736c99;
+  --cta-100: #675bf4;
 }
 :root {
-  --confirm: #7db078;
-  --deny: #ba6d6d;
+  --confirm-100: hsl(115, 26%, 58%);
+  --deny-100: hsl(0, 36%, 58%);
+  --confirm-200: hsla(115, 26%, 58%, 0.65);
+  --deny-200: hsla(0, 36%, 58%, 0.65);
+  --dark: #6d6da6;
+  --light: #04010a;
 }
 *,
 *::before,
@@ -114,7 +46,7 @@
 body {
   font-family: "DM Sans", sans-serif;
   background-color: var(--background-100);
-  color: var(--text-800);
+  color: var(--text-100);
   transition: background-color 120ms, color 80ms;
 }
 h1 { font-size: 2.75rem; }
@@ -170,7 +102,7 @@ nav.page-header {
   margin: 0 0 0 0;
   padding: 0 8rem 0 8rem;
   top: 0;
-  border-bottom: 1px solid var(--background-400);
+  border-bottom: 1px solid var(--accent-200);
   background-color: transparent;
   backdrop-filter: blur(10px);
   z-index: 99;
@@ -188,9 +120,13 @@ nav.page-header {
   opacity: 0.65;
   transition: opacity 120ms;
 }
+.check-uncheck-buttons svg:hover:first-child {
+  opacity: 1;
+  filter: drop-shadow(0px 0px 6px var(--deny-200));
+}
 .check-uncheck-buttons svg:hover {
   opacity: 1;
-  filter: drop-shadow(0px 0px 8px var(--background-200));
+  filter: drop-shadow(0px 0px 6px var(--confirm-200));
 }
 nav.quicklinks {
   display: flex;
@@ -209,18 +145,18 @@ nav.quicklinks {
 details summary {
   padding: 0.5rem;
   margin-block: 0.25rem;
-  background-color: var(--background-200);
+  background-color: var(--accent-100);
   border-radius: 0.25em;
 }
 details li {
   padding-block: 0.25rem;
   padding-left: 0.75rem;
   margin-block: 0.25rem;
-  background-color: var(--background-300);
+  background-color: var(--accent-200);
   border-radius: 0.25em;
 }
 details li a {
-  color: var(--accent-800);
+  color: var(--text-800);
 }
 article {
   padding-bottom: 2.5rem;
@@ -238,29 +174,29 @@ header kbd {
   font-size: 2.75rem;
   font-weight: 500;
   padding-top: 2.75rem;
-  color: var(--text-600);
+  color: var(--text-200);
 }
 label.no-percent {
   font-style: italic;
-  color: var(--primary-700);
+  color: var(--text-300);
 }
 ins {
-  color: var(--accent-600);
+  color: var(--cta-100);
   font-family: monospace;
 }
 p ins {
   font-size: 1.25rem;
 }
 .check-uncheck-buttons svg:first-child {
-  fill: var(--deny);
+  fill: var(--deny-100);
   cursor: pointer;
 }
 .check-uncheck-buttons svg:last-child {
-  fill: var(--confirm);
+  fill: var(--confirm-100);
   cursor: pointer;
 }
 svg.help-icon {
-  fill: var(--primary-700);
+  fill: var(--text-200);
   margin-left: 0.75rem;
   cursor: help;
 }
@@ -303,7 +239,7 @@ input[type="checkbox"] {
   color: currentColor;
   width: 1em;
   height: 1em;
-  border: 0.15em solid var(--accent-600);
+  border: 0.15em solid var(--cta-100);
   border-radius: 0.2em;
   transform: translateY(0.125em);
   display: grid;
@@ -317,7 +253,7 @@ input[type="checkbox"]::before {
   border-radius: 0.125em;
   transform: scale(0);
   transition: 80ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--accent-600);
+  box-shadow: inset 1em 1em var(--cta-100);
   background-color: var(--background-100);
 }
 input[type="checkbox"]:checked::before {
@@ -338,10 +274,10 @@ hr {
 }
 .list-styling label:nth-of-type(odd),
 .list-styling-collectable {
-  background-color: var(--background-200);
+  background-color: var(--primary-100);
 }
 .list-styling label:nth-of-type(even) {
-  background-color: var(--background-300);
+  background-color: var(--primary-200);
 }
 
 
@@ -368,7 +304,7 @@ hr {
   height: 2.25rem;
   width: 2.25rem;
   border-radius: 50%;
-  background-color: var(--background-400);
+  background-color: var(--primary-200);
   opacity: 0.65;
   display: flex;
   justify-content: center;
@@ -379,10 +315,10 @@ hr {
 #themeToggle:hover {
   transition: opacity 120ms, filter 120ms;
   opacity: 1;
-  filter: drop-shadow(0 0 8px var(--background-200));
+  filter: drop-shadow(0 0 8px var(--primary-200));
 }
 #themeToggle svg {
-  fill: var(--background-100);
+  fill: var(--text-100);
 }
 #themeToggle svg:last-child {
   display: none;
