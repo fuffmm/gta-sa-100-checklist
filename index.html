@@ -12,13 +12,13 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="main.js"></script>
-    <script src="modal.js"></script>
+    <!-- <script src="sidebarnav.js"></script> -->
     <script defer src="darkmode.js"></script>
     <title>GTA: San Andreas 100% Checklist</title>
   </head>
   <body>
     <nav class="page-header" id="pageTop">
-        <h3><strong>100% Tracker</strong></h3>
+        <a href="#top_of_page" class="header-logo"><strong>100% Tracker</strong></a>
         <p class="expanded">Your Completion: <strong><ins id="num_completed_nav">0</strong></ins> / <ins><strong>187</strong></ins> of Required Objectives. [&nbsp;<ins id="completion_overview_percent_nav"><strong>0%</strong></ins>&nbsp;]</p>
         <p class="hidden"><strong><ins id="num_completed_nav_min">0</strong></ins> / <ins><strong>187</strong></ins>&nbsp;[&nbsp;<ins id="completion_overview_percent_nav_min"><strong>0%</strong></ins>&nbsp;]</p>
         <button id="themeToggle" type="button">
@@ -45,121 +45,88 @@
             <summary> > Collectables</summary>
               <ul>
                 <hr>
-                <li><a href="#">Los Santos Gang Tags</a></li>
-                <li><a href="#">San Fierro Snapshots</a></li>
-                <li><a href="#">Las Venturas Horseshoes</a></li>
-                <li><a href="#">San Andreas Collectables</a></li>
+                <li><a href="#los-santos-tags">Los Santos Gang Tags</a></li>
+                <li><a href="#san-fierro-snapshots">San Fierro Snapshots</a></li>
+                <li><a href="#las-venturas-horseshoes">Las Venturas Horseshoes</a></li>
+                <li><a href="#san-andreas-oysters">San Andreas Collectables</a></li>
               </ul>
           </details>
           <details>
-            <summary> > Sub-Missions</summary>
-              <ul>
-                <hr>
-                <li><a href="#"></a></li>
-              </ul>
+            <summary class="sidebar-no-expand"><a href="#sub-missions"> Sub-Missions</a></summary>
           </details>
           <details>
-            <summary> > Hidden Challenges</summary>
-              <ul>
-                <hr>
-                <li><a href="#">Los Santos Challenges</a></li>
-                <li><a href="#">Countryside Challenges</a></li>
-                <li><a href="#">San Fierro Challenges</a></li>
-              </ul>
+            <summary class="sidebar-no-expand"><a href="#hidden-challenges"> Hidden Challenges</a></summary>
           </details>
           <details>
-            <summary> > Stadium Challenges</summary>
-              <ul>
-                <hr>
-                <li><a href="#">Los Santos Stadium</a></li>
-                <li><a href="#">San Fierro Stadium</a></li>
-                <li><a href="#">Las Venturas Stadium</a></li>
-              </ul>
+            <summary class="sidebar-no-expand"><a href="#stadium-challenges"> Stadium Challenges</a></summary>
           </details>
           <details>
-            <summary> > Gym Moves</summary>
-              <ul>
-                <hr>
-                <li><a href="#">Los Santos Gym</a></li>
-                <li><a href="#">San Fierro Gym</a></li>
-                <li><a href="#">Las Venturas Gym</a></li>
-              </ul>
+            <summary class="sidebar-no-expand"><a href="#gym-moves"> Gym Moves</a></summary>
           </details>
           <details>
-            <summary> > Ammu-Nation Challenges</summary>
-              <ul>
-                <hr>
-                <li><a href="#">Gun Challenges</a></li>
-              </ul>
+            <summary class="sidebar-no-expand"><a href="#ammunation-challenges"> Ammu-Nation Challenges</a></summary>
           </details>
           <details>
             <summary> > Vehicle Schools</summary>
               <ul>
                 <hr>
-                <li><a href="#">San Fierro Driving School</a></li>
-                <li><a href="#">Desert Boat School</a></li>
-                <li><a href="#">Desert Flight School</a></li>
-                <li><a href="#">Las Venturas Bike School</a></li>
+                <li><a href="#san-fierro-driving-school">San Fierro Driving School</a></li>
+                <li><a href="#desert-boat-school">Desert Boat School</a></li>
+                <li><a href="#desert-flight-school">Desert Flight School</a></li>
+                <li><a href="#las-venturas-bike-school">Las Venturas Bike School</a></li>
               </ul>
           </details>
           <details>
-            <summary> > Courier Missions</summary>
-              <ul>
-                <hr>
-                <li><a href="#">Los Santos Courier</a></li>
-                <li><a href="#">San Fierro Courier</a></li>
-                <li><a href="#">San Fierro Courier</a></li>
-              </ul>
+            <summary class="sidebar-no-expand"><a href="#courier-missions"> Courier Missions</a></summary>
           </details>
           <details>
             <summary> > Asset Missions</summary>
               <ul>
                 <hr>
-                <li><a href="#">Countryside Trucking</a></li>
-                <li><a href="#">San Fierro Valet Parking</a></li>
-                <li><a href="#">Las Venturas Quarry</a></li>
+                <li><a href="#countryside-trucking">Countryside Trucking</a></li>
+                <li><a href="#san-fierro-valet-parking">San Fierro Valet Parking</a></li>
+                <li><a href="#las-venturas-quarry">Las Venturas Quarry</a></li>
               </ul>
           </details>
           <details>
             <summary> > Street Races</summary>
               <ul>
                 <hr>
-                <li><a href="#">Los Santos Street Races</a></li>
-                <li><a href="#">San Fierro Street Races</a></li>
-                <li><a href="#">Las Venturas LVA Freight Depot Street Races</a></li>
-                <li><a href="#">Las Venturas Airport Checkpoint Challenges</a></li>
+                <li><a href="#los-santos-street-races">Los Santos Street Races</a></li>
+                <li><a href="#san-fierro-street-races">San Fierro Street Races</a></li>
+                <li><a href="#las-venturas-lva-freight-depot-street-races">Las Venturas LVA Freight Depot Street Races</a></li>
+                <li><a href="#las-venturas-airport-checkpoint-challenges">Las Venturas Airport Checkpoint Challenges</a></li>
               </ul>
           </details>
           <details>
             <summary> > Import / Export</summary>
               <ul>
                 <hr>
-                <li><a href="#">Complete List 1</a></li>
-                <li><a href="#">Complete List 2</a></li>
-                <li><a href="#">Complete List 3</a></li>
+                <li><a href="#complete-list-1">Complete List 1</a></li>
+                <li><a href="#complete-list-2">Complete List 2</a></li>
+                <li><a href="#complete-list-3">Complete List 3</a></li>
               </ul>
           </details>
           <details>
             <summary> > Safe Houses / Businesses</summary>
               <ul>
                 <hr>
-                <li><a href="#">Los Santos Safe Houses</a></li>
-                <li><a href="#">Countryside Safe Houses</a></li>
-                <li><a href="#">San Fierro Safe Houses</a></li>
-                <li><a href="#">Desert Safe Houses</a></li>
-                <li><a href="#">Las Venturas Safe Houses</a></li>
-                <li><a href="#">San Fierro Businesses</a></li>
-                <li><a href="#">Desert Business</a></li>
+                <li><a href="#los-santos-safe-houses">Los Santos Safe Houses</a></li>
+                <li><a href="#countryside-safe-houses">Countryside Safe Houses</a></li>
+                <li><a href="#san-fierro-safe-houses">San Fierro Safe Houses</a></li>
+                <li><a href="#desert-safe-houses">Desert Safe Houses</a></li>
+                <li><a href="#las-venturas-safe-houses">Las Venturas Safe Houses</a></li>
+                <li><a href="#san-fierro-desert-businesses">Businesses</a></li>
               </ul>
           </details>
         </nav>
       </div>
       <div class="main-container">
-      <h1>GTA: San Andreas 100% Checklist</h1>
+      <h1 class="section-jumpable" id="top_of_page">GTA: San Andreas 100% Checklist</h1>
       <h6>Your Completion: <ins id="num_completed">0</ins>&nbsp;/&nbsp;<ins>187</ins> of Required Objectives. [&nbsp;&nbsp;<ins id="completion_overview_percent"></ins>&nbsp;&nbsp;]</h6>
       <p class="section-header">Story Missions</p>
       <article class="list-styling check-all-group">
-        <header class="sub-header" id="los-santos-story"> >> Los Santos Story Missions</header>
+        <header class="sub-header section-jumpable" id="los-santos-story"> >> Los Santos Story Missions</header>
         <div class="check-uncheck-buttons"><svg class="uncheck-all" data-tooltip="Top" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
         <label class="no-percent" for="story_in-the-beginning">
           <input class="form-check-input" id="story_in-the-beginning" type="checkbox" value="" />
@@ -279,7 +246,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header" id="countryside-story"> >> Countryside Missions</header>
+        <header class="sub-header section-jumpable" id="countryside-story"> >> Countryside Missions</header>
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
         <label class="gives-percent" for="story_badlands">
           <input class="form-check-input" id="story_badlands" type="checkbox" value="" />
@@ -339,7 +306,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header" id="san-fierro-story"> >> San Fierro Missions</header>
+        <header class="sub-header section-jumpable" id="san-fierro-story"> >> San Fierro Missions</header>
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
         <label class="gives-percent" for="story_wearflowersinyourhair">
           <input class="form-check-input" id="story_wearflowersinyourhair" type="checkbox" value="" />
@@ -451,7 +418,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header" id="desert-story"> >> Desert Story Missions</header>
+        <header class="sub-header section-jumpable" id="desert-story"> >> Desert Story Missions</header>
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
         <label class="gives-percent" for="story_monster">
           <input class="form-check-input" id="story_monster" type="checkbox" value="" />
@@ -491,7 +458,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header" id="las-venturas-story"> >> Las Venturas Story Missions</header>
+        <header class="sub-header section-jumpable" id="las-venturas-story"> >> Las Venturas Story Missions</header>
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
         <label class="gives-percent" for="story_fenderketchup">
           <input class="form-check-input" id="story_fenderketchup" type="checkbox" value="" />
@@ -571,7 +538,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header" id="final-story"> >> Final Story Missions</header>
+        <header class="sub-header section-jumpable" id="final-story"> >> Final Story Missions</header>
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
         <label class="gives-percent" for="story_verticalbird">
           <input class="form-check-input" id="story_verticalbird" type="checkbox" value="" />
@@ -608,7 +575,7 @@
       </article>
       <p class="section-header">Collectables</p>
       <article class="collectables-tags check-all-group">
-        <header class="sub-header"> >> Los Santos Gang Tags
+        <header class="sub-header section-jumpable" id="los-santos-tags"> >> Los Santos Gang Tags
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <div class="collectables-formatting">
            <label class="no-percent">
@@ -1020,7 +987,7 @@
     </article>
 
     <article class="collectables-snapshots check-all-group">
-      <header class="sub-header"> >> San Fierro Snapshots
+      <header class="sub-header section-jumpable" id="san-fierro-snapshots"> >> San Fierro Snapshots
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <div class="collectables-formatting">
           <label class="no-percent">
@@ -1232,7 +1199,7 @@
     </article>
 
       <article class="collectables-horseshoes check-all-group">
-        <header class="sub-header"> >> Las Venturas Horseshoes
+        <header class="sub-header section-jumpable" id="las-venturas-horseshoes"> >> Las Venturas Horseshoes
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <div class="collectables-formatting">
            <label class="no-percent">
@@ -1444,7 +1411,7 @@
     </article>
 
       <article class="collectables-oysters check-all-group">
-        <header class="sub-header"> >> San Andreas Collectables
+        <header class="sub-header section-jumpable" id="san-andreas-oysters"> >> San Andreas Collectables
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <div class="collectables-formatting">
            <label class="no-percent">
@@ -1656,7 +1623,7 @@
     </article>
 
     <div class="check-all-group">
-      <p class="section-header sub-header">Complete Sub-Missions</p>
+      <p class="section-header sub-header section-jumpable-xl" id="sub-missions">Complete Sub-Missions</p>
       <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
       <article class="list-styling">
          <label class="gives-percent">
@@ -1686,7 +1653,7 @@
       </article>
     </div>
     <div class="check-all-group">
-      <p class="section-header sub-header">Complete Hidden Challenges</p>
+      <p class="section-header sub-header section-jumpable-xl" id="hidden-challenges">Complete Hidden Challenges</p>
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
       <article class="list-styling">
         <header> >> Los Santos Hidden Challenges</header>
@@ -1724,7 +1691,7 @@
       </article>
     </div>
     <div class="check-all-group">
-      <p class="section-header sub-header">Stadium Challenges</p>
+      <p class="section-header sub-header section-jumpable-xl" id="stadium-challenges">Stadium Challenges</p>
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
       <article class="list-styling">
         <header> >> Los Santos Stadium Challenges</header>
@@ -1753,7 +1720,7 @@
       </article>
     </div>
     <div class="check-all-group">
-      <p class="section-header sub-header">Gym Moves</p>
+      <p class="section-header sub-header section-jumpable-xl" id="gym-moves">Gym Moves</p>
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
       <article class="list-styling">
         <header> >> Los Santos Gym Moves</header>
@@ -1778,7 +1745,7 @@
       </article>
     </div>
     <div class="check-all-group">
-      <p class="section-header sub-header">Ammu-Nation Gun Challenges</p>
+      <p class="section-header sub-header section-jumpable-xl" id="ammunation-challenges">Ammu-Nation Gun Challenges</p>
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
       <article class="list-styling">
          <label class="gives-percent">
@@ -1801,7 +1768,7 @@
     </div>
       <p class="section-header">Vehicle Schools</p>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> San Fierro Driving School
+        <header class="sub-header section-jumpable" id="san-fierro-driving-school"> >> San Fierro Driving School
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
           <input class="form-check-input" id="driving_school_01" type="checkbox" value="" />
@@ -1858,7 +1825,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Desert Boat School
+        <header class="sub-header section-jumpable" id="desert-boat-school"> >> Desert Boat School
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
           <input class="form-check-input" id="boat_school_01" type="checkbox" value="" />
@@ -1887,7 +1854,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Desert Flight School
+        <header class="sub-header section-jumpable" id="desert-flight-school"> >> Desert Flight School
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
           <input class="form-check-input" id="flight_school_01" type="checkbox" value="" />
@@ -1936,7 +1903,7 @@
           </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Las Venturas Bike School
+        <header class="sub-header section-jumpable" id="las-venturas-bike-school"> >> Las Venturas Bike School
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
           <input class="form-check-input" id="bike_school_01" type="checkbox" value="" />
@@ -1968,7 +1935,7 @@
           Pass All Bike School Tests (Bronze Or Higher)
         </label>
       </article>
-      <p class="section-header sub-header">Courier Missions</p>
+      <p class="section-header sub-header section-jumpable-xl" id="courier-missions">Courier Missions</p>
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div>
       <article class="list-styling">
         <header> >> Los Santos Courier Missions</header>
@@ -1993,7 +1960,7 @@
       </article>
       <p class="section-header">Asset Missions</p>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Countryside Trucking Missions
+        <header class="sub-header section-jumpable" id="countryside-trucking"> >> Countryside Trucking Missions
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
           <input class="form-check-input" id="trucking_01" type="checkbox" value="" />
@@ -2034,14 +2001,14 @@
         </label>
       </article>
       <article class="list-styling">
-        <header> >> San Fierro Valet Parking Missions</header>
+        <header class="sub-header section-jumpable" id="san-fierro-valet-parking"> >> San Fierro Valet Parking Missions</header>
          <label class="gives-percent">
           <input class="form-check-input" id="all_valet" type="checkbox" value="" />
           Complete Valet Parking Level 5
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Las Venturas Quarry Missions
+        <header class="sub-header section-jumpable" id="las-venturas-quarry"> >> Las Venturas Quarry Missions
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
           <input class="form-check-input" id="quarry_01" type="checkbox" value="" />
@@ -2079,7 +2046,7 @@
       </article>
       <p class="section-header">Win Street Races</p>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Los Santos Street Races
+        <header class="sub-header section-jumpable" id="los-santos-street-races"> >> Los Santos Street Races
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
         <label class="no-percent">
           <input class="form-check-input" id="ls_race_01" type="checkbox" value="" />
@@ -2119,7 +2086,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> San Fierro Street Races
+        <header class="sub-header section-jumpable" id="san-fierro-street-races"> >> San Fierro Street Races
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
           <input class="form-check-input" id="sf_race_01" type="checkbox" value="" />
@@ -2147,7 +2114,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Las Venturas LVA Freight Depot Street Races
+        <header class="sub-header section-jumpable" id="las-venturas-lva-freight-depot-street-races"> >> Las Venturas LVA Freight Depot Street Races
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
           <input class="form-check-input" id="lv_lva_race_01" type="checkbox" value="" />
@@ -2167,7 +2134,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Las Venturas Airport Checkpoint Challenges
+        <header class="sub-header section-jumpable" id="las-venturas-airport-checkpoint-challenges"> >> Las Venturas Airport Checkpoint Challenges
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
           <input class="form-check-input" id="lv_airport_race_01" type="checkbox" value="" />
@@ -2196,7 +2163,7 @@
       </article>
       <p class="section-header">Import / Export</p>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Complete List 1
+        <header class="sub-header section-jumpable" id="complete-list-1"> >> Complete List 1
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="no-percent">
           <input class="form-check-input" id="imex_1_01" type="checkbox" value="" />
@@ -2245,7 +2212,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Complete List 2
+        <header class="sub-header section-jumpable" id="complete-list-2"> >> Complete List 2
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="no-percent">
           <input class="form-check-input" id="imex_2_01" type="checkbox" value="" />
@@ -2294,7 +2261,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Complete List 3
+        <header class="sub-header section-jumpable" id="complete-list-3"> >> Complete List 3
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="no-percent">
           <input class="form-check-input" id="imex_3_01" type="checkbox" value="" />
@@ -2344,7 +2311,7 @@
       </article>
       <p class="section-header">Purchase Safe Houses <ins>*Total Cost $879,000</ins></p>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Purchase 6 Los Santos Safe Houses
+        <header class="sub-header section-jumpable" id="los-santos-safe-houses"> >> Purchase 6 Los Santos Safe Houses
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
           <input class="form-check-input" id="ls_safehouse_01" type="checkbox" value="" />
@@ -2372,7 +2339,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Purchase 5 Countryside Safe Houses
+        <header class="sub-header section-jumpable" id="countryside-safe-houses"> >> Purchase 5 Countryside Safe Houses
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
           <input class="form-check-input" id="country_safehouse_01" type="checkbox" value="" />
@@ -2396,7 +2363,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Purchase 6 San Fierro Safe Houses
+        <header class="sub-header section-jumpable" id="san-fierro-safe-houses"> >> Purchase 6 San Fierro Safe Houses
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
           <input class="form-check-input" id="sf_safehouse_01" type="checkbox" value="" />
@@ -2424,7 +2391,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Purchase 3 Desert Safe Houses
+        <header class="sub-header section-jumpable" id="desert-safe-houses"> >> Purchase 3 Desert Safe Houses
         <div class="check-uncheck-buttons"><svg class="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
           <input class="form-check-input" id="desert_safehouse_01" type="checkbox" value="" />
@@ -2440,7 +2407,7 @@
         </label>
       </article>
       <article class="list-styling check-all-group">
-        <header class="sub-header"> >> Purchase 9 Las Venturas Safe Houses<div class="check-uncheck-buttons"><svg class="uncheck-all" id="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
+        <header class="sub-header section-jumpable" id="las-venturas-safe-houses"> >> Purchase 9 Las Venturas Safe Houses<div class="check-uncheck-buttons"><svg class="uncheck-all" id="uncheck-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg><svg class="check-all" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></div></header>
          <label class="gives-percent">
           <input class="form-check-input" id="lv_safehouse_01" type="checkbox" value="" />
           Whitewood Estates - <ins>$30,000</ins>
@@ -2478,7 +2445,7 @@
           Creek - <ins>$10,000</ins>
         </label>
       </article>
-      <p class="section-header">Purchase Businesses <ins>*Total Cost $160,000</ins></p>
+      <p class="section-header section-jumpable" id="san-fierro-desert-businesses">Purchase Businesses <ins>*Total Cost $160,000</ins></p>
       <article class="list-styling">
         <header> >> Purchase 2 San Fierro Businesses</header>
          <label class="gives-percent">

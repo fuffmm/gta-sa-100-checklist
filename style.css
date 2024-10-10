@@ -30,8 +30,6 @@
   --deny-100: hsl(0, 36%, 58%);
   --confirm-200: hsla(115, 26%, 58%, 0.65);
   --deny-200: hsla(0, 36%, 58%, 0.65);
-  --dark: #6d6da6;
-  --light: #04010a;
 }
 *,
 *::before,
@@ -43,6 +41,9 @@
   text-decoration: none;
   list-style: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "DM Sans", sans-serif;
   background-color: var(--background-100);
@@ -51,9 +52,10 @@ body {
 }
 h1 { font-size: 2.75rem; }
 h2 { font-size: 2rem; }
-h3,h6,header { font-size: 1.75rem; }
+h3,h6,header,.header-logo { font-size: 1.75rem; }
 p,label { font-size: 1.25rem; }
 kbd { font-size: 1.35rem; font-family: monospace; }
+.header-logo { color: var(--text-100); }
 
 .container {
   display: flex;
@@ -147,6 +149,7 @@ details summary {
   margin-block: 0.25rem;
   background-color: var(--accent-100);
   border-radius: 0.25em;
+  cursor: pointer;
 }
 details li {
   padding-block: 0.25rem;
@@ -278,6 +281,19 @@ hr {
 }
 .list-styling label:nth-of-type(even) {
   background-color: var(--primary-200);
+}
+
+
+
+
+.section-jumpable {
+  scroll-margin-top: 6rem;
+}
+.section-jumpable-xl {
+  scroll-margin-top: 4rem;
+}
+.sidebar-no-expand a {
+  color: var(--text-100);
 }
 
 
