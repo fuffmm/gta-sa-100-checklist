@@ -141,6 +141,11 @@ nav.quicklinks {
   max-width: 18rem;
   margin-right: 3.25rem;
 }
+.side-bar-nav {
+  position: fixed;
+  min-width: 18rem;
+  max-width: 18rem;
+}
 .main-container {
   width: 100%;
 }
@@ -197,11 +202,6 @@ p ins {
 .check-uncheck-buttons svg:last-child {
   fill: var(--confirm-100);
   cursor: pointer;
-}
-svg.help-icon {
-  fill: var(--text-200);
-  margin-left: 0.75rem;
-  cursor: help;
 }
 
 
@@ -295,6 +295,20 @@ hr {
 .sidebar-no-expand a {
   color: var(--text-100);
 }
+
+
+
+
+
+.sidebar-fixed > ul > li:before {
+  content: "\200B";
+  position: absolute;
+}
+.dropdown > ul > li:before {
+  content: "\200B";
+  position: absolute;
+}
+
 
 
 
